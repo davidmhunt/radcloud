@@ -126,9 +126,9 @@ We are working to host the dataset on another service, but for now, please email
 
 To generate a dataset for training or evaluation, there are two options:
 
-1. **Jupyter Notebooks** The dataset contains the raw radar data from the IWR1443 recorded using the DCA1000. To generate a test or training dataset from the raw data, please use the generate_dataset.ipynb jupyter notebook found in the [Notebooks](https://github.com/davidmhunt/RadCloud/Notebooks) folder. Within this notebook, you can toggle between three of our primary testing and training datasets used in the RadCloud paper. Note that there is a notebook for generating datasets with both radar and lidar data or just radar data (if you have recorded your own dataset).
+1. **Jupyter Notebooks** The dataset contains the raw radar data from the IWR1443 recorded using the DCA1000. To generate a test or training dataset from the raw data, please use the generate_dataset.ipynb jupyter notebook found in the [Notebooks](./Notebooks/) folder. Within this notebook, you can toggle between three of our primary testing and training datasets used in the RadCloud paper. Note that there is a notebook for generating datasets with both radar and lidar data or just radar data (if you have recorded your own dataset).
 
-2. **Scripts** If you instead want to use a python script  please use the generate_dataset.py script found in the [scripts](https://github.com/davidmhunt/RadCloud/scripts) folder. Within this script, you can toggle between three of our primary testing and training datasets used in the RadCloud paper. To call the script using the installed poetry environment, you can use the following terminal command
+2. **Scripts** If you instead want to use a python script  please use the generate_dataset.py script found in the [scripts](./scripts/) folder. Within this script, you can toggle between three of our primary testing and training datasets used in the RadCloud paper. To call the script using the installed poetry environment, you can use the following terminal command
 ```
 cd RadCloud/scripts
 poetry run python generate_dataset.py
@@ -141,11 +141,11 @@ To record your own dataset, reach out to [david.hunt@duke.edu](mailto:david.hunt
 
 ## Viewing model results
 
-We have included a pre-trained RadCloud model in the [working_dir](https://github.com/davidmhunt/RadCloud/working_dir) folder so that you don't have to train the model to get started looking at results. To view results from a trained model, please use the view_results.ipynb jupyter notebook from the [Notebooks](https://github.com/davidmhunt/RadCloud/Notebooks) folder. Note, a dataset must be generated before viewing model results, but the view_results.ipynb file will automatically generate a dataset for viewing results by default. 
+We have included a pre-trained RadCloud model in the [working_dir](./working_dir/) folder so that you don't have to train the model to get started looking at results. To view results from a trained model, please use the view_results.ipynb jupyter notebook from the [Notebooks](./Notebooks/) folder. Note, a dataset must be generated before viewing model results, but the view_results.ipynb file will automatically generate a dataset for viewing results by default. 
 
 ## Generating a movie
 
-We have included a pre-trained RadCloud model in the [working_dir](https://github.com/davidmhunt/RadCloud/working_dir) folder so that you don't have to train the model to get started looking at results. While the view_results scripts and notebooks can view a single frame, we also include two scripts that can be used to generate a movie for a given dataset. To utilize these scripts, please see the generate_movie.py file found in the [scripts](https://github.com/davidmhunt/RadCloud/scripts) folder. The script will have to be modified depending on the dataset you want to generate a movie for. Once you've specified the dataset you want to use, run the following command to generate a movie:
+We have included a pre-trained RadCloud model in the [working_dir](./working_dir/) folder so that you don't have to train the model to get started looking at results. While the view_results scripts and notebooks can view a single frame, we also include two scripts that can be used to generate a movie for a given dataset. To utilize these scripts, please see the generate_movie.py file found in the [scripts](./scripts/) folder. The script will have to be modified depending on the dataset you want to generate a movie for. Once you've specified the dataset you want to use, run the following command to generate a movie:
 
 ```
 cd RadCloud/scripts
@@ -157,9 +157,9 @@ Note that there are scripts for generating datasets with both radar and lidar da
 ## Training a model
 While we provide the originally trained RadCloud model, we also include scripts that can be used to retrain or train a modified version of the RadCloud model. This can be done using one of two methods:
 
-1. **Jupyter Notebooks** To train a new model, please use the train_model.ipynb jupyter notebook found in the [Notebooks](https://github.com/davidmhunt/RadCloud/Notebooks) folder. 
+1. **Jupyter Notebooks** To train a new model, please use the train_model.ipynb jupyter notebook found in the [Notebooks](./Notebooks/) folder. 
 
-2. **Scripts** If you instead want to use a python script  please use the train_model.py script found in the [scripts](https://github.com/davidmhunt/RadCloud/scripts) folder. To call the script using the installed poetry environment, you can use the following terminal command
+2. **Scripts** If you instead want to use a python script  please use the train_model.py script found in the [scripts](./scripts/) folder. To call the script using the installed poetry environment, you can use the following terminal command
 ```
 cd RadCloud/scripts
 poetry run python train_model.py
