@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "RadCloud"
+version = "0.1.0"
+description = "RadCloud Project"
+authors = ["David Hunt <david.hunt@duke.edu>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "CPSL_Radar"}]
+
+[tool.poetry.dependencies]
+python = "~3.8"
+imutils = "^0.5.4"
+natsort = "^8.4.0"
+albumentations = "^1.3.1"
+numpy = ">=1.20, <1.24"
+scipy = "^1.9"
+opencv-python = ">=4.3, <4.7"
+tqdm = "^4"
+scikit-learn = "^1.1"
+imageio = {extras = ["ffmpeg"], version = "^2.31.1"}
+matplotlib = "^3.7"
+pandas = "^2.0"
+open3d = "^0.18.0"
+addict = "^2.4.0"
+
+[tool.poetry.dev-dependencies]
+gdown = "^4.6.4"
+ipywidgets = "^8.0"
+jupyter = "^1.0.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7"
+pytest-cov = "^4"
+bandit = "^1.7"
+black = "~22.12.0"
+mypy = "^0"
+isort = "^5.11"
+flake8 = "^5.0"
+snakeviz="^2.1.1"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q -s"
+testpaths = [
+    "tests",
+    "integration",
+]
+
+[build-system]
+requires = [
+    "poetry-core",
+]
+build-backend = "poetry.core.masonry.api"
