@@ -5,7 +5,6 @@ description = "RadCloud Project"
 authors = ["David Hunt <david.hunt@duke.edu>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "CPSL_Radar"}]
 
 [tool.poetry.dependencies]
 python = "~3.8"
