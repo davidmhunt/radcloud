@@ -7,7 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #import CPSL Radar Dataset Generator Code
-from RadCloud.datasets.Dataset_Generator import DatasetGenerator
+from radcloud.datasets.Dataset_Generator import DatasetGenerator
 
 dataset_folder = "../data"
 

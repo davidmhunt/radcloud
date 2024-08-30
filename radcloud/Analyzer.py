@@ -16,7 +16,7 @@ from IPython.display import display
 
 
 #dataset generator
-from RadCloud.datasets.Dataset_Generator import DatasetGenerator
+from radcloud.datasets.Dataset_Generator import DatasetGenerator
 
 class Analyzer:
 

@@ -1,13 +1,13 @@
 import sys
 sys.path.append("..")
-from RadCloud.models.unet import unet
-from RadCloud.trainer import Trainer
+from radcloud.models.unet import unet
+from radcloud.trainer import Trainer
 
 #loss functions
-from RadCloud.losses.BCE_dice_loss import BCE_DICE_Loss
-from RadCloud.losses.dice_loss import DiceLoss
-from RadCloud.losses.focal_loss import FocalLoss
-from RadCloud.transforms.random_radar_noise import RandomRadarNoise
+from radcloud.losses.BCE_dice_loss import BCE_DICE_Loss
+from radcloud.losses.dice_loss import DiceLoss
+from radcloud.losses.focal_loss import FocalLoss
+from radcloud.transforms.random_radar_noise import RandomRadarNoise
 
 #other torch functions
 from torch.nn import BCEWithLogitsLoss

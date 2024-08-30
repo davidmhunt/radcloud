@@ -1,9 +1,9 @@
 import sys
 import os
 import numpy as np
-from RadCloud.Analyzer import Analyzer
-from RadCloud.datasets.Dataset_Generator import DatasetGenerator
-from RadCloud.models.unet import unet
+from radcloud.Analyzer import Analyzer
+from radcloud.datasets.Dataset_Generator import DatasetGenerator
+from radcloud.models.unet import unet
 from torchvision import transforms
 
 def main():

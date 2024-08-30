@@ -1,6 +1,6 @@
 from torch.nn import BCEWithLogitsLoss
 from torch.optim import Adam
-from RadCloud.datasets.Segmentation_Dataset import SegmentationDataset
+from radcloud.datasets.Segmentation_Dataset import SegmentationDataset
 from torch.nn import Module
 import torch.nn as nn
 from torch.utils.data import DataLoader
