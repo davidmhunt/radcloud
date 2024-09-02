@@ -1,6 +1,6 @@
 #data processors
-from CPSL_Radar.data_processors.Radar_Data_Processor import RadarDataProcessor
-from CPSL_Radar.data_processors.Lidar_Data_Processor import LidarDataProcessor
+from radcloud.data_processors.Radar_Data_Processor import RadarDataProcessor
+from radcloud.data_processors.Lidar_Data_Processor import LidarDataProcessor
 
 import os
 import numpy as np

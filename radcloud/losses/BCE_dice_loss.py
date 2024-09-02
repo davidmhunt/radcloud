@@ -5,7 +5,7 @@ import torch
 
 #import existing loss functions
 from torch.nn import BCEWithLogitsLoss
-from CPSL_Radar.losses.dice_loss import DiceLoss
+from radcloud.losses.dice_loss import DiceLoss
 
 class BCE_DICE_Loss(Module):
 

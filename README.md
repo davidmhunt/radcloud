@@ -22,9 +22,9 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 ```
 
-3. Install python 3.8 along with the required development dependencies
+3. Install python 3.10 along with the required development dependencies
 ```
-sudo apt install python3.8 python3.8-dev
+sudo apt install python3.10 python3.10-dev
 ```
 
 The following resources may be helpful [Deadsnakes PPA description](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa), [Tutorial on Deadsnakes on Ubuntu](https://preocts.github.io/python/20221230-deadsnakes/)
@@ -41,12 +41,12 @@ bash Anaconda3-2023.09-0-Linux-x86_64.sh -b
 ```
 3. Once conda is installed, create a new conda environment with the correct version of python
 ```
-conda create -n RadCloud python=3.8
+conda create -n RadCloud python=3.10
 ```
 
 ### 2. Clone the RadCloud repository
 ```
-git clone https://github.com/davidmhunt/RadCloud.git
+git clone https://github.com/davidmhunt/radcloud.git
 ```
 
 ### 3. Install RadCloud using Poetry
@@ -78,7 +78,7 @@ export PYTHON_KEYRING_BACKEND=keyring.backends.null.Keyring
 1. Navigate to the Odometry foler (this folder) and execute the following command.
 
 ```
-cd RadCloud
+cd radcloud
 conda activate RadCloud #(Only if you installed python using Anaconda)
 poetry install
 ```
@@ -97,7 +97,7 @@ pip3 install torch torchvision torchaudio
 ```
 2. Navigate to the RadCloud folder
 ```
-cd RadCloud
+cd radcloud
 ```
 3. Start a poetry shell
 ```
@@ -130,7 +130,7 @@ To generate a dataset for training or evaluation, there are two options:
 
 2. **Scripts** If you instead want to use a python script  please use the generate_dataset.py script found in the [scripts](./scripts/) folder. Within this script, you can toggle between three of our primary testing and training datasets used in the RadCloud paper. To call the script using the installed poetry environment, you can use the following terminal command
 ```
-cd RadCloud/scripts
+cd radcloud/scripts
 poetry run python generate_dataset.py
 ```
 Note that there are scripts for generating datasets with both radar and lidar data or just radar data (if you have recorded your own dataset).
@@ -148,7 +148,7 @@ We have included a pre-trained RadCloud model in the [working_dir](./working_dir
 We have included a pre-trained RadCloud model in the [working_dir](./working_dir/) folder so that you don't have to train the model to get started looking at results. While the view_results scripts and notebooks can view a single frame, we also include two scripts that can be used to generate a movie for a given dataset. To utilize these scripts, please see the generate_movie.py file found in the [scripts](./scripts/) folder. The script will have to be modified depending on the dataset you want to generate a movie for. Once you've specified the dataset you want to use, run the following command to generate a movie:
 
 ```
-cd RadCloud/scripts
+cd radcloud/scripts
 poetry run python generate_movie.py
 ```
 Note that there are scripts for generating datasets with both radar and lidar data or just radar data (if you have recorded your own dataset).
@@ -161,7 +161,7 @@ While we provide the originally trained RadCloud model, we also include scripts 
 
 2. **Scripts** If you instead want to use a python script  please use the train_model.py script found in the [scripts](./scripts/) folder. To call the script using the installed poetry environment, you can use the following terminal command
 ```
-cd RadCloud/scripts
+cd radcloud/scripts
 poetry run python train_model.py
 ```
 Note that there are scripts for generating datasets with both radar and lidar data or just radar data (if you have recorded your own dataset).

@@ -1,9 +1,9 @@
 import sys
 import os
 import numpy as np
-from CPSL_Radar.Analyzer import Analyzer
-from CPSL_Radar.datasets.Dataset_Generator import DatasetGenerator
-from CPSL_Radar.models.unet import unet
+from radcloud.Analyzer import Analyzer
+from radcloud.datasets.Dataset_Generator import DatasetGenerator
+from radcloud.models.unet import unet
 from torchvision import transforms
 
 def main():

@@ -16,7 +16,7 @@ from IPython.display import display
 
 
 #dataset generator
-from CPSL_Radar.datasets.Dataset_Generator import DatasetGenerator
+from radcloud.datasets.Dataset_Generator import DatasetGenerator
 
 class Analyzer:
 
@@ -53,7 +53,7 @@ class Analyzer:
         self._init_model(transforms_to_apply=transforms_to_apply)
 
         #temp directory folder name
-        self.temp_directory_path = "temp_CPSL_Radar"
+        self.temp_directory_path = "temp_RadCloud"
         self.temp_file_name = "frame"
 
         #tracking failed predictions (predictions where nothing was predicted)
