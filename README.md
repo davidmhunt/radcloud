@@ -22,9 +22,9 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 ```
 
-3. Install python 3.8 along with the required development dependencies
+3. Install python 3.10 along with the required development dependencies
 ```
-sudo apt install python3.8 python3.8-dev
+sudo apt install python3.10 python3.10-dev
 ```
 
 The following resources may be helpful [Deadsnakes PPA description](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa), [Tutorial on Deadsnakes on Ubuntu](https://preocts.github.io/python/20221230-deadsnakes/)
@@ -41,7 +41,7 @@ bash Anaconda3-2023.09-0-Linux-x86_64.sh -b
 ```
 3. Once conda is installed, create a new conda environment with the correct version of python
 ```
-conda create -n RadCloud python=3.8
+conda create -n RadCloud python=3.10
 ```
 
 ### 2. Clone the RadCloud repository
